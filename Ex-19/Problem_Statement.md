@@ -1,27 +1,27 @@
-# Experiment 18 – Set Up a CI/CD Pipeline using Jenkins, Docker, and Cloud Deployment
+# Experiment 19 – Implement Continuous Deployment using GitHub Actions for a Dockerized Application
 
 ## Aim
 
-To implement a Continuous Integration and Continuous Deployment (CI/CD) pipeline using Jenkins for automating the build, testing, and deployment of a containerized application.
+To implement a Continuous Deployment (CD) pipeline using GitHub Actions that automatically builds, pushes, and deploys a Dockerized application to a cloud platform.
 
 ---
 
 ## Problem Statement
 
-Continuous Integration and Continuous Deployment (CI/CD) are essential DevOps practices that automate software development workflows. Jenkins is a widely used automation server that integrates with Git repositories, Docker, and cloud platforms to automate application building, testing, and deployment.
+Continuous Deployment (CD) is a DevOps practice that automates the deployment of applications whenever changes are pushed to the source code repository. GitHub Actions provides a powerful workflow automation platform that integrates seamlessly with GitHub repositories. Combined with Docker, it enables automated building, testing, and deployment of containerized applications.
 
-In this experiment, set up Jenkins, containerize a sample application using Docker, create a Jenkins pipeline to automate the build and deployment process, and configure Jenkins to trigger builds automatically when code changes are pushed to a Git repository.
+In this experiment, create a Dockerized application, configure GitHub Actions to automatically build and push the Docker image to Docker Hub or GitHub Container Registry, and deploy the application to a cloud platform such as AWS ECS, Azure Kubernetes Service (AKS), or Google Kubernetes Engine (GKE). Finally, verify that the deployment occurs automatically whenever new code is pushed to the repository.
 
 ---
 
 ## Objectives
 
-- Understand the concepts of CI/CD.
-- Install and configure Jenkins.
+- Understand Continuous Deployment using GitHub Actions.
 - Containerize an application using Docker.
-- Create a Jenkins Pipeline using a Jenkinsfile.
-- Automate application build, testing, and deployment.
-- Configure Jenkins to trigger builds on Git commits or Pull Requests.
+- Create GitHub Actions workflows.
+- Automate Docker image build and push.
+- Deploy the application automatically to a cloud platform.
+- Verify automated deployment after code changes.
 
 ---
 
@@ -29,88 +29,58 @@ In this experiment, set up Jenkins, containerize a sample application using Dock
 
 Perform the following tasks:
 
-1. Set up Jenkins on a local machine or server.
-2. Create a Dockerfile to containerize a sample application.
-3. Write a Jenkinsfile to automate the following:
-   - Checkout source code
-   - Build the application
-   - Run automated tests
-   - Build the Docker image
-   - Deploy the application to a cloud platform (AWS/GCP) or a local Docker environment
-4. Configure Jenkins to automatically trigger builds whenever code is committed or a Pull Request is created.
-5. Execute the pipeline successfully and verify the deployment.
+1. Create a GitHub repository and push a simple Dockerized application.
+2. Create a GitHub Actions workflow to:
+   - Checkout the source code.
+   - Build the Docker image.
+   - Push the Docker image to Docker Hub or GitHub Container Registry.
+3. Configure automatic deployment to a cloud platform such as:
+   - AWS Elastic Container Service (ECS)
+   - Azure Kubernetes Service (AKS)
+   - Google Kubernetes Engine (GKE)
+4. Test the CI/CD pipeline by pushing new code changes.
+5. Verify that the application is automatically rebuilt and deployed.
 
 ---
 
 ## Tools Required
 
-- Jenkins
-- Docker
 - Git
 - GitHub
+- GitHub Actions
+- Docker
+- Docker Hub or GitHub Container Registry
 - Visual Studio Code
-- Java (JDK)
-- AWS / Google Cloud Platform (Optional)
+- AWS ECS / Azure AKS / Google GKE (or another supported cloud platform)
 
 ---
 
 ## Files Required
 
 - Dockerfile
-- Jenkinsfile
+- GitHub Actions Workflow (`.github/workflows/deploy.yml`)
 - Application Source Code
-- README.md (Optional)
-
----
-
-## Sample Pipeline Stages
-
-1. Source Code Checkout
-2. Build Application
-3. Run Unit Tests
-4. Build Docker Image
-5. Push Docker Image (Optional)
-6. Deploy Application
-7. Verify Deployment
-
----
-
-## Sample Commands
-
-### Build Docker Image
-
-```bash
-docker build -t sample-app .
-```
-
-### Run Docker Container
-
-```bash
-docker run -d -p 8080:80 sample-app
-```
-
-### View Running Containers
-
-```bash
-docker ps
-```
+- README.md
 
 ---
 
 ## Deliverables
 
-- Jenkins Installation
+- GitHub Repository
+- Dockerized Application
 - Dockerfile
-- Jenkinsfile
-- Docker Image
-- Successful Jenkins Pipeline
-- Running Docker Container
-- Deployment to Cloud or Local Environment
-- Screenshots of Jenkins Pipeline Execution
-- Screenshot of Running Application
+- GitHub Actions Workflow
+- Docker Image in Docker Hub or GitHub Container Registry
+- Successful Workflow Execution
+- Automated Cloud Deployment
+- Repository Link
+- Screenshots of:
+  - GitHub Actions workflow
+  - Docker image repository
+  - Successfully deployed application
 
 ---
 
 ## Expected Outcome
 
-A CI/CD pipeline is successfully configured using Jenkins to automate the building, testing, containerization, and deployment of a sample application. The pipeline should automatically execute whenever changes are pushed to the Git repository, demonstrating an efficient DevOps workflow.
+A Dockerized application is successfully deployed using GitHub Actions. Whenever code changes are pushed to the GitHub repository, the workflow automatically builds the Docker image, pushes it to a container registry, and deploys the latest version of the application to the configured cloud platform, demonstrating an automated Continuous Deployment pipeline.
