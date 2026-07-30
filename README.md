@@ -98,134 +98,80 @@ contains:
 
 ---
 
-# 📊 Repository Progress
+---
 
-```
-
-Completed
-
-█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-1 / 30 Experiments
-
-```
-# 🛠 Software & Tools Used
+# 📈 Repository Progress
 
 <div align="center">
 
-<table>
-<tr>
+### 🚀 Overall Progress
 
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=git" width="55"/><br>
-<b>Git</b>
-</td>
-
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=github" width="55"/><br>
-<b>GitHub</b>
-</td>
-
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=vscode" width="55"/><br>
-<b>VS Code</b>
-</td>
-
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=docker" width="55"/><br>
-<b>Docker</b>
-</td>
-
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=kubernetes" width="55"/><br>
-<b>Kubernetes</b>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=githubactions" width="55"/><br>
-<b>GitHub Actions</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=jenkins" width="55"/><br>
-<b>Jenkins</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=python" width="55"/><br>
-<b>Python</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=flask" width="55"/><br>
-<b>Flask</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=html" width="55"/><br>
-<b>HTML</b>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=css" width="55"/><br>
-<b>CSS</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=js" width="55"/><br>
-<b>JavaScript</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=java" width="55"/><br>
-<b>Java</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=c" width="55"/><br>
-<b>C</b>
-</td>
-
-<td align="center">
-<img src="https://skillicons.dev/icons?i=cpp" width="55"/><br>
-<b>C++</b>
-</td>
-
-</tr>
-</table>
+![Progress](https://img.shields.io/badge/Completed-12%2F30-success?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-18-orange?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Completion-40%25-blue?style=for-the-badge)
 
 </div>
 
+```
+Overall Progress
+
+████████░░░░░░░░░░░░ 40%
+
+Completed  : 12 Experiments ✅
+
+Remaining  : 18 Experiments ⏳
+
+Target      : 30 Experiments 🎯
+```
+
 ---
 
-# 🔧 Additional Software Used
+# 📚 Experiment Status
+
+| No | Status | Experiment |
+|:--:|:------:|------------|
+| 01 | ✅ | Completed |
+| 02 | ✅ | Completed |
+| 03 | ✅ | Completed |
+| 04 | ✅ | Completed |
+| 05 | ✅ | Completed |
+| 06 | ✅ | Completed |
+| 07 | ✅ | Completed |
+| 08 | ✅ | Completed |
+| 09 | ✅ | Completed |
+| 10 | ✅ | Completed |
+| 11 | ✅ | Completed |
+| 12 | ✅ | Completed |
+| 13 | ⏳ | Pending |
+| 14 | ⏳ | Pending |
+| 15 | ⏳ | Pending |
+| 16 | ⏳ | Pending |
+| 17 | ⏳ | Pending |
+| 18 | ⏳ | Pending |
+| 19 | ⏳ | Pending |
+| 20 | ⏳ | Pending |
+| 21 | ⏳ | Pending |
+| 22 | ⏳ | Pending |
+| 23 | ⏳ | Pending |
+| 24 | ⏳ | Pending |
+| 25 | ⏳ | Pending |
+| 26 | ⏳ | Pending |
+| 27 | ⏳ | Pending |
+| 28 | ⏳ | Pending |
+| 29 | ⏳ | Pending |
+| 30 | ⏳ | Pending |
+
+---
 
 <div align="center">
 
-| Tool | Purpose |
-|------|---------|
-| 🎨 **Figma** | UI / UX Prototyping |
-| 📋 **Jira** | Agile Project Management |
-| 📚 **Confluence** | Documentation |
-| 📊 **Google Sheets / Excel** | MoSCoW Prioritization |
-| 📈 **Raptor** | Flowcharts |
-| 🏗 **Umbrello** | UML Diagrams |
-| ☸ **Kubernetes** | Container Orchestration |
-| 🐳 **Docker Hub** | Container Registry |
-| ⚙ **GitHub Actions** | CI/CD Pipeline |
-| 🔄 **Jenkins** | Continuous Integration |
+## 🎯 Milestone Tracker
+
+🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜
+
+**40% Completed**
 
 </div>
-
----
 
 # 🧰 Laboratory Toolkit
 
