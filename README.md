@@ -298,56 +298,70 @@ CSA1012-SOFTWARE-ENGINEERING-LABS
 
 # 🧪 Laboratory Experiments
 
-| No | Experiment | Tool | Status |
-|:--:|------------|------|:------:|
-| 01 | Kanban Board | 🟦 Jira / Trello | ✅ |
-| 02 | Bus Ticket Prototype | 🎨 Figma | ⏳ |
-| 03 | E-Commerce Prototype | 🎨 Figma | ⏳ |
-| 04 | String Flowchart | 📊 Raptor | ⏳ |
-| 05 | Lexicographical String | 📊 Raptor | ⏳ |
-| 06 | Online Food Delivery UML | 🏗️ Umbrello | ⏳ |
-| 07 | Security Management UML | 🏗️ Umbrello | ⏳ |
-| 08 | Cyclomatic Complexity | 📊 Raptor | ⏳ |
-| 09 | Scrum Project | 🟦 Jira | ⏳ |
-| 10 | MoSCoW Prioritization | 📈 Excel | ⏳ |
-| 11 | Jira + Confluence | 📚 Confluence | ⏳ |
-| 12 | Task Management | 🟦 Jira | ⏳ |
-| 13 | Online Learning Platform | 🟦 Jira | ⏳ |
-| 14 | Fork & Pull Request | 🐙 GitHub | ⏳ |
-| 15 | Merge Conflicts | 🌿 Git | ⏳ |
-| 16 | Static Website | 🐳 Docker | ⏳ |
-| 17 | Flask API + Kubernetes | ☸ Kubernetes | ⏳ |
-| 18 | Jenkins CI/CD | ⚙ Jenkins | ⏳ |
-| 19 | GitHub Actions | ⚡ GitHub Actions | ⏳ |
-| 20 | Version Control | 🐙 GitHub | ⏳ |
-| 21 | Flask To-Do App | 🐍 Flask | ⏳ |
-| 22 | Docker Hub | 🐳 Docker | ⏳ |
-| 23 | Multi-Container App | ☸ Kubernetes | ⏳ |
-| 24 | GitHub Actions Pipeline | ⚡ GitHub Actions | ⏳ |
-| 25 | GitHub Repository | 🐙 GitHub | ⏳ |
-| 26 | Clone Repository | 🌿 Git | ⏳ |
-| 27 | Commit & Push | 🌿 Git | ⏳ |
-| 28 | Pull Latest Changes | 🌿 Git | ⏳ |
-| 29 | Feature Branch & PR | 🐙 GitHub | ⏳ |
-| 30 | Team Collaboration | 👨‍💻 Git Workflow | ⏳ |
+<div align="center">
 
----
+| # | Experiment | Tool | CO | Difficulty | Status |
+|:-:|------------|------|:-:|:----------:|:------:|
+| **01** | **[📁 Kanban Board](./Ex-1)** | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) ![Trello](https://img.shields.io/badge/Trello-0079BF?style=flat-square&logo=trello&logoColor=white) | CO1 | 🟢 Easy | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **02** | **[📁 Bus Ticket Prototype](./Ex-2)** | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white) | CO1 | 🟢 Easy | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **03** | **[📁 E-Commerce Prototype](./Ex-3)** | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white) | CO1 | 🟢 Easy | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **04** | **[📁 String Flowchart](./Ex-4)** | ![Raptor](https://img.shields.io/badge/Raptor-6C63FF?style=flat-square) | CO1 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **05** | **[📁 Lexicographical String](./Ex-5)** | ![Raptor](https://img.shields.io/badge/Raptor-6C63FF?style=flat-square) | CO1 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **06** | **[📁 Online Food Delivery UML](./Ex-6)** | ![Umbrello](https://img.shields.io/badge/Umbrello-3F51B5?style=flat-square) | CO1 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **07** | **[📁 Security Management UML](./Ex-7)** | ![Umbrello](https://img.shields.io/badge/Umbrello-3F51B5?style=flat-square) | CO1 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **08** | **[📁 Cyclomatic Complexity](./Ex-8)** | ![Raptor](https://img.shields.io/badge/Raptor-6C63FF?style=flat-square) | CO1 | 🔴 Hard | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **09** | **[📁 Scrum Project](./Ex-9)** | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) | CO2 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **10** | **[📁 MoSCoW Prioritization](./Ex-10)** | ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) | CO2 | 🟢 Easy | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **11** | **[📁 Jira + Confluence](./Ex-11)** | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) ![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white) | CO2 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **12** | **[📁 Task Management System](./Ex-12)** | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) | CO2 | 🟡 Medium | ![Done](https://img.shields.io/badge/Completed-22C55E?style=flat-square) |
+| **13** | **[📁 Online Learning Platform](./Ex-13)** | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) | CO2 | 🟡 Medium | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **14** | **[📁 Fork & Pull Request](./Ex-14)** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) | CO3 | 🟡 Medium | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **15** | **[📁 Merge Conflict Resolution](./Ex-15)** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) | CO3 | 🔴 Hard | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **16** | **[📁 Docker Static Website](./Ex-16)** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | CO3 | 🟡 Medium | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **17** | **[📁 Flask + Kubernetes](./Ex-17)** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | CO3 | 🔴 Hard | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **18** | **[📁 Jenkins CI/CD](./Ex-18)** | ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white) | CO4 | 🔴 Hard | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **19** | **[📁 GitHub Actions](./Ex-19)** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) | CO4 | 🔴 Hard | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
+| **20–30** | **Remaining Experiments** | Various Tools | CO3/CO4 | 🔴 Hard | ![Pending](https://img.shields.io/badge/Pending-F59E0B?style=flat-square) |
 
+</div>
 # 📈 Progress Dashboard
 
-```
-📚 Total Experiments     ██████████████████████ 30
+<div align="center">
 
-✅ Completed             █░░░░░░░░░░░░░░░░░░░░ 1
+<img src="https://img.shields.io/badge/Completed-12-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Remaining-18-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Total-30-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Progress-40%25-8A2BE2?style=for-the-badge"/>
 
-📝 Remaining             ███████████████████░ 29
+</div>
 
-🚀 Repository Progress   3%
+<br>
+
+```text
+📚 Total Experiments      █████████████████████████ 30
+
+✅ Completed              ████████░░░░░░░░░░░░░░░░ 12
+
+📝 Remaining              ████████████░░░░░░░░░░░ 18
+
+🚀 Repository Progress    ████████░░░░░░░░░░░░░░░░ 40%
 ```
 
 ---
 
 <div align="center">
+
+### 🎯 Progress Towards Completion
+
+🟢🟢🟢🟢⚪⚪⚪⚪⚪⚪
+
+**12 / 30 Experiments Completed**
+
+⭐ **40% Complete**
+
+</div>
+
+---
 
 ## ⚡ Technologies Covered
 
