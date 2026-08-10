@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/dharanigovardhan2008/ex18-cicd.git'
+            }
+        }
+
+        stage('Show Output') {
+            steps {
+                sh 'echo "Hello from EX18 CI/CD Pipeline 🚀"'
+            }
+        }
+    }
+}
