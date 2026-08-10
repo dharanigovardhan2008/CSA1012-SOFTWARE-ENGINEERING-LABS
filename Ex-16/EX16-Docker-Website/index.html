@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Experiment 16</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Animated background */
+body::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    top: -100px;
+    left: -100px;
+    animation: move 8s infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #6366f1, transparent);
+    bottom: -100px;
+    right: -100px;
+    animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+    from { transform: translate(0,0); }
+    to { transform: translate(80px,80px); }
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.05);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #cbd5f5;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #e2e8f0;
+}
+
+.badge {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(90deg,#38bdf8,#6366f1);
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 Software Engineering Lab</h1>
+<h2>Experiment 16</h2>
+
+<p>Static Website using Docker + Nginx</p>
+<p><strong>Name:</strong> Dharani Govardhan</p>
+
+<div class="badge">Dockerized Successfully ✅</div>
+
+<button class="button">Powered by Docker</button>
+
+<div class="footer">
+Built with ❤️ | Modern UI Design
+</div>
+
+</div>
+
+</body>
+</html>
