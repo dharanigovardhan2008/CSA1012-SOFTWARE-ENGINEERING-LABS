@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EX22 | Docker Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Inter, Arial, sans-serif;
+            background: #070b14;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #2563eb;
+            filter: blur(160px);
+            opacity: .18;
+            top: -200px;
+            left: -150px;
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 450px;
+            height: 450px;
+            background: #06b6d4;
+            filter: blur(170px);
+            opacity: .14;
+            right: -150px;
+            bottom: -150px;
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(40px, -30px);
+            }
+        }
+
+        .container {
+            width: min(1100px, calc(100% - 40px));
+            margin: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+
+            animation: fadeDown .7s ease;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .logo-box {
+            width: 38px;
+            height: 38px;
+            border-radius: 11px;
+            background: white;
+            position: relative;
+        }
+
+        .logo-box::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 3px solid #111827;
+            border-radius: 5px;
+            top: 8px;
+            left: 8px;
+        }
+
+        .nav-label {
+            color: #8b95a7;
+            font-size: 13px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 850px;
+            animation: fadeUp .9s ease;
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 8px 14px;
+            border: 1px solid rgba(255,255,255,.1);
+            background: rgba(255,255,255,.04);
+            border-radius: 999px;
+            color: #aeb8c8;
+            font-size: 12px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 88px);
+            line-height: .95;
+            letter-spacing: -.06em;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            background: linear-gradient(
+                90deg,
+                #60a5fa,
+                #22d3ee
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            max-width: 650px;
+            margin: auto;
+            color: #8b95a7;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .architecture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 42px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            padding: 15px 20px;
+            border-radius: 14px;
+            background: rgba(255,255,255,.045);
+            border: 1px solid rgba(255,255,255,.08);
+            color: #d8dee9;
+            font-size: 13px;
+            transition: .25s ease;
+            backdrop-filter: blur(14px);
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            border-color: rgba(96,165,250,.4);
+            background: rgba(96,165,250,.08);
+        }
+
+        .arrow {
+            color: #536074;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 45px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 18px;
+            text-align: left;
+
+            background: rgba(255,255,255,.035);
+            border: 1px solid rgba(255,255,255,.07);
+
+            transition: .25s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255,255,255,.06);
+        }
+
+        .info-title {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .info-text {
+            color: #778297;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #4f5a6c;
+            font-size: 11px;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .info {
+                grid-template-columns: 1fr;
+            }
+
+            .arrow {
+                display: none;
+            }
+
+            h1 {
+                font-size: 54px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <nav>
+
+        <div class="logo">
+            <div class="logo-box"></div>
+            EX22
+        </div>
+
+        <div class="nav-label">
+            Docker Hub Image Distribution
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="badge">
+                LAB EX22 · CONTAINER REGISTRY
+            </div>
+
+            <h1>
+                Build once.<br>
+                <span>Run anywhere.</span>
+            </h1>
+
+            <p class="description">
+                A static website containerized with Docker,
+                published to Docker Hub, and pulled onto
+                another environment to demonstrate
+                portable container deployment.
+            </p>
+
+
+            <div class="architecture">
+
+                <div class="step">
+                    Source Code
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+                <div class="step">
+                    Docker Image
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+                <div class="step">
+                    Docker Hub
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+                <div class="step">
+                    New Machine
+                </div>
+
+            </div>
+
+
+            <div class="info">
+
+                <div class="info-card">
+
+                    <div class="info-title">
+                        Containerized
+                    </div>
+
+                    <div class="info-text">
+                        The website runs inside
+                        an isolated Nginx container.
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-title">
+                        Portable
+                    </div>
+
+                    <div class="info-text">
+                        The same image can be
+                        pulled and executed anywhere.
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-title">
+                        Docker Hub
+                    </div>
+
+                    <div class="info-text">
+                        The image is stored in a
+                        centralized container registry.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        EX22 · Docker Image Push & Pull · Nginx
+    </footer>
+
+</div>
+
+</body>
+
+</html>
